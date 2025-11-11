@@ -20,8 +20,8 @@ a_list = div_list.find_all('a')
 
 for a in a_list:
     hero_name = a.get_text()
-    link = re.search(r"href=\"(.*)\"", str(a))
-    hero = f"Name: {hero_name} - Link = https://pt.wikipedia.org{link.group(0)}\n"
+    link = re.search(r"""href=\"(.*)\" title""", str(a))
+    hero = f"Name: {hero_name} - Link = https://pt.wikipedia.org{link.group(1)}\n"
 
     with open("dc_heros.txt", "a") as file:
         file.write(hero)
