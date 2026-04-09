@@ -1,2 +1,2 @@
-# scrapytut
-Aprendendo sobre o scrapy e engenharia de dados
+# DataScience
+Aprendendo sobre Ciência de dados, scrapy e engenharia de dados
