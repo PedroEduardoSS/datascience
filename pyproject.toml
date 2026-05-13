@@ -12,3 +12,8 @@ dependencies = [
     "selenium>=4.38.0",
     "webdriver-manager>=4.0.2",
 ]
+
+[tool.uv.workspace]
+members = [
+    "prefect-tutorial",
+]
